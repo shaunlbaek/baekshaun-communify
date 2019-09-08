@@ -123,15 +123,6 @@ function LoginScreen({ setUserCtx }) {
             ? "If you don't have an account, please sign up"
             : "If you already have an account, please sign in"}
         </div>
-        <ul>
-          <div>Tom Hank</div>
-          <li>Email: tom@guest.com</li>
-          <li>Password: 123456</li>
-
-          <div>Bob Bill</div>
-          <li>Email: bob@guest.com</li>
-          <li>Password: 123456</li>
-        </ul>
       </div>
     </div>
   );
