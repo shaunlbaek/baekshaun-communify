@@ -1,0 +1,50 @@
+@import "../../common.scss";
+
+.rowStyle {
+  display:"flex";
+  justify-content: space-between;
+  align-items: center;
+}
+.post-form {
+  > * {
+  display: center;
+  padding: 10px;
+  width: 90%;
+  border-radius: 2px;
+  width: 100%;
+  }
+  .post-button {
+    background-color: #5e6073;
+    color: white;
+    border-radius: 4px;
+  }
+}
+
+.PostEntry {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  font-size: 14px;
+
+  > *:first-child {
+    flex-grow: 1
+  }
+
+  .author {
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  border-bottom: 1px solid transparentize($color5, 0.8);
+
+  a {
+    color: $color5;
+    text-decoration: none;
+  }
+}
+
+.Viewer {
+  white-space: pre;
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import "./common.scss";
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .main {
+    flex: 1;
+  }
+}
+
+.as-a, a {
+  // color: $color1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form.form1 {
+
+  label {
+    color: $color2;
+  }
+
+  input {
+    padding: 14px 0;
+    border: none;
+    border-bottom: 1px solid $color1;
+    background: white;
+  }
+  input::placeholder {
+    color: transparentize($color1, 0.5);
+  }
+  input:focus {
+    outline: none;
+  }
+  select {
+    padding: 14px;
+    border: 1px solid $color3;
+    border-radius: 5px;
+    background: white;
+    color: gray;
+  }
+
+  &.vertical {
+    display: flex;
+    flex-direction: column;
+
+    > label, button {
+      margin-top: 10px;
+    }
+  }
+
+  .err-msg {
+    color: salmon;
+  }
+}
+
+button.btn {
+
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.primary {
+    background: $color1;
+    color: white;
+
+    &:hover {
+      background: transparentize($color: $color1, $amount: 0.5)
+    }
+    &:active {
+      background: $color2;
+    }
+  }
+  &.secondary {
+    background: $color1;
+    color: white;
+
+    &:hover {
+      background: transparentize($color: $color2, $amount: 0.5)
+    }
+    &:active {
+      background: black;
+    }
+  }
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.box {
+  border: 1px solid $color1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icon-spin {
+  animation: spin-animation 1s infinite linear;
+  transform-origin: 50% 50% 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin-animation {
+  from {
+    transform: rotate(0);
+    opacity: 0.2;
+  }
+  50% {
+    color: red;
+    font-size: 1.2em;
+    opacity: 1;
+  }
+
+  to {
+    transform: rotate(359deg);
+    opacity: 0.2;
+  }
+}
+
+.right-txt {
+  text-align: right;
+}

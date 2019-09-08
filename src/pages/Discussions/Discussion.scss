@@ -1,0 +1,29 @@
+@import "../../common.scss";
+
+.Viewer {
+  .content {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+.Discussions {
+  .writeBtn {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      background: $color1;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      border: 0;
+      border-radius: 4px;
+      padding: 4px 8px;
+
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}

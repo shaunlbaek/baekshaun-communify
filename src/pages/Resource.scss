@@ -1,0 +1,91 @@
+@import "../common.scss";
+
+.ResourceHome {
+  h3 {
+    color: $color5;
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid $color1;
+    width: 100px;
+    overflow-x: visible;
+    white-space: nowrap;
+    margin: 30px 0;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      font-size: 16px;
+      margin-right: 40px;
+      list-style: none;
+      a {
+        color: $color5;
+        text-decoration: none;
+      }
+    }
+    li::before {      
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f192";
+      color: $color2;
+      margin-right: 5px;
+    }
+  }
+}
+
+.ResourceList {
+  .post-form {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: transparentize($color: gray, $amount: 0.5);
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      width: 70%;
+      background: white;
+      padding: 10px;
+      box-shadow: 1px 1px 3px gray;
+
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.ResourceEntry {
+  font-size: 14px;
+  display:grid;
+  grid-template-columns: 1fr 150px;
+  border-bottom: 1px solid transparentize($color6, 0.8);
+  padding: 10px;
+
+  a {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: $color1;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 2px 5px;
+    margin-left: 5px;
+    text-decoration: none;
+  }
+  .links {
+    a {
+      background-color: $color2;
+    }
+  }
+
+  &.verbose {
+    grid-template-columns: 100px 80px 1fr 150px;
+  }
+}

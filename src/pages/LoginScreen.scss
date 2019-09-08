@@ -1,0 +1,56 @@
+@import '../common.scss';
+
+.LoginScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .upper {
+    height: 40vh;
+    background-image: url('/imgs/bg_login_top.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: $color3;
+
+    > h1 {
+      text-transform: uppercase;
+     font-family: 'Noto Sans';
+     font-size: 48px;
+    }
+  }
+
+  .lower {
+    flex: 1;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: $color1;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+   
+  
+    > .as-a {
+      margin-top: 20px;
+    }
+  
+    form {
+      width: 80%;
+      
+      input[type=text], input[type=password] {
+        font-weight: bold;
+        color: $color1;
+      }
+    }
+  }
+}
