@@ -14,7 +14,7 @@ function LoginScreen({ setUserCtx }) {
   return (
     <div className="LoginScreen">
       <div className="upper">
-        <h1>Communify</h1>
+        <h1>Communify v1.0.2</h1>
       </div>
       <div className="lower">
         <form
