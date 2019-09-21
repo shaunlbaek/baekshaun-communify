@@ -104,7 +104,7 @@ function LoginScreen({ setUserCtx }) {
                 }}
               >
                 <option>---choose your school---</option>
-                {["Portola", "Other"].map(s => (
+                {["Portola", "Northwood", "Irvine", "Other"].map(s => (
                   <option value={s}>{s}</option>
                 ))}
               </select>

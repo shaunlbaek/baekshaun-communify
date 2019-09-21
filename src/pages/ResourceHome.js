@@ -6,7 +6,7 @@ import { db } from "../utils/db";
 import { ResourceEntry } from "./ResourceList";
 
 const DATA = {
-  English: ["LLA1", "LLA2"],
+  Enlish: ["LLA", "ALA"],
   Math: ["Math 1", "Math 2", "Math 2 EM", "Math 3", "Math 3 EM"],
   Science: ["Biology", "Chemestry", "Physics"],
   History: ["World History", "US History ", "H3"]
