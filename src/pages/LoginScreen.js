@@ -67,6 +67,16 @@ function LoginScreen({ setUserCtx }) {
                     lastname,
                     school
                   });
+
+                let userCtx = {
+                  uid: userRef.user.uid,
+                  email: userRef.user.email,
+                  firstname,
+                  lastname,
+                  school
+                };
+                localStorage.setItem("userCtx", JSON.stringify(userCtx));
+                setUserCtx(userCtx);
               }
             } catch (err) {
               setErrMsg(err.message);
