@@ -6,10 +6,14 @@ import { db } from "../utils/db";
 import { ResourceEntry } from "./ResourceList";
 
 const DATA = {
-  English: ["LLA", "ALA"],
-  Math: ["Math 1", "Math 2", "Math 2 EM", "Math 3", "Math 3 EM"],
+  English: [
+    "Literary & Language Arts",
+    "American Literary & Language Arts",
+    "AP English Language & Composition"
+  ],
+  Math: ["Math 1", "Math 2 (CP/H)", "Math 3 (CP/H)", "AP Calculus (AB/BC)"],
   Science: ["Biology", "Chemestry", "Physics"],
-  History: ["World History", "US History ", "H3"]
+  History: ["World History", "American History History ", "AP Human Geography"]
 };
 
 function ResourceHome() {
