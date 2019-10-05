@@ -41,9 +41,9 @@ function Nav({ setUserCtx, location }) {
             {userCtx.firstname} {userCtx.lastname}
             {showUserMenu && (
               <div className="user-sub-menu">
-                <a className="profile" href="/profile">
+                <Link className="profile" to="/profile">
                   <div>Profile</div>
-                </a>
+                </Link>
 
                 <div
                   className="as-a"
