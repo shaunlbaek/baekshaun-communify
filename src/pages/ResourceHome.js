@@ -13,7 +13,14 @@ const DATA = {
   ],
   Science: ["Biology", "Chemestry", "Physics"],
   History: ["World History", "American History ", "AP Human Geography"],
-  Math: ["Math 1", "Math 2 CP H", "Math 3 CP H", "AP Calculus AB BC"]
+  Language: ["Spanish", "Chinese", "Korean", "French"],
+  Math: [
+    "Math 1",
+    "Math 2 CP H",
+    "Math 3 CP H",
+    "AP Calculus AB BC",
+    "AP Statistics"
+  ]
 };
 
 function ResourceHome() {
