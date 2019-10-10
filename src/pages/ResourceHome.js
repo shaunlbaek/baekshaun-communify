@@ -12,7 +12,7 @@ const DATA = {
     "AP English Language & Composition"
   ],
   Science: ["Biology", "Chemestry", "Physics"],
-  History: ["World History", "American History History ", "AP Human Geography"],
+  History: ["World History", "American History ", "AP Human Geography"],
   Math: ["Math 1", "Math 2 CP H", "Math 3 CP H", "AP Calculus AB BC"]
 };
 
